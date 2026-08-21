@@ -111,4 +111,20 @@ To: à
 Search: Recherche
 Past: FIXLANG Passé
 ShowAll: Afficher tout
+Eisenhower: Eisenhower
+Eisenhower/Hint: Glissez les tâches de la boîte de réception dans le quadrant approprié : urgent vs. pas urgent, important vs. pas important.
+Eisenhower/Urgent: Urgent
+Eisenhower/NotUrgent: Pas urgent
+Eisenhower/Important: Important
+Eisenhower/NotImportant: Pas important
+Eisenhower/DoFirst: À faire d'abord
+Eisenhower/DoFirst/Description: Important et urgent — à faire maintenant
+Eisenhower/Schedule: Planifier
+Eisenhower/Schedule/Description: Important, pas urgent — à planifier
+Eisenhower/Delegate: Déléguer
+Eisenhower/Delegate/Description: Urgent, pas important — à déléguer
+Eisenhower/Eliminate: Éliminer
+Eisenhower/Eliminate/Description: Ni important ni urgent — à abandonner
+Eisenhower/Empty: Aucune tâche
+Eisenhower/BackToInbox: Retour à la boîte de réception
 

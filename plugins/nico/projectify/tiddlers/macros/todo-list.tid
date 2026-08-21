@@ -14,6 +14,10 @@ type: text/vnd.tiddlywiki
 \define todo-list-drop-actions(tag)
 <!-- Same as list-tagged-draggable-drop-actions, but removing the item from its old project and adding the todo tag. -->
 <$action-listops $tiddler=<<actionTiddler>> $tags=<<todo-list-drop-tags>>/>
+<!-- Clear the quadrant classification when a todo is moved back to the Inbox -->
+<$list filter="[<__tag__>match[Inbox]]">
+  <$action-deletefield $tiddler=<<actionTiddler>> quadrant/>
+</$list>
 <!-- Save the current ordering of the tiddlers with this tag -->
 <$set name="order" filter="[<__tag__>tagging[]]">
 <!-- Remove any list-after or list-before fields from the tiddlers with this tag -->

@@ -111,3 +111,19 @@ To: FIXLANG to
 Search: FIXLANG Search
 Past: FIXLANG Past
 ShowAll: FIXLANG Show all
+Eisenhower: Eisenhower
+Eisenhower/Hint: Ziehe Aufgaben aus der Inbox in den passenden Quadranten: dringend vs. nicht dringend, wichtig vs. nicht wichtig.
+Eisenhower/Urgent: Dringend
+Eisenhower/NotUrgent: Nicht dringend
+Eisenhower/Important: Wichtig
+Eisenhower/NotImportant: Nicht wichtig
+Eisenhower/DoFirst: Zuerst erledigen
+Eisenhower/DoFirst/Description: Wichtig & dringend — sofort erledigen
+Eisenhower/Schedule: Planen
+Eisenhower/Schedule/Description: Wichtig, nicht dringend — einplanen
+Eisenhower/Delegate: Delegieren
+Eisenhower/Delegate/Description: Dringend, nicht wichtig — delegieren
+Eisenhower/Eliminate: Eliminieren
+Eisenhower/Eliminate/Description: Weder wichtig noch dringend — streichen
+Eisenhower/Empty: Keine Aufgaben
+Eisenhower/BackToInbox: Zurück zur Inbox

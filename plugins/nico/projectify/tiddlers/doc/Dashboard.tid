@@ -7,7 +7,9 @@ type: text/vnd.tiddlywiki
 The main entry point of Projectify is the dashboard.
 It displays the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]], lists
 [[Projects|$:/plugins/nico/projectify/doc/Projects]], the
-[[Schedule|$:/plugins/nico/projectify/doc/Schedule]] and [[Next actions|$:/plugins/nico/projectify/doc/NextActions]].
+[[Schedule|$:/plugins/nico/projectify/doc/Schedule]] and [[Next actions|$:/plugins/nico/projectify/doc/NextActions]],
+and can help you prioritise your tasks with the
+[[Eisenhower matrix|$:/plugins/nico/projectify/doc/Eisenhower]].
 
 <<py-tip "[[You do not have to use the dashboard|$:/plugins/nico/projectify/doc/TranscludingUIElements]] to use Projectify.">>
 

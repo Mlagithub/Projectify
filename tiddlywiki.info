@@ -3,7 +3,8 @@
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
-		"nico/projectify"
+		"nico/projectify",
+        "nico/projectify-zh-Hans"
     ],
     "themes": [
         "tiddlywiki/vanilla",

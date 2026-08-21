@@ -1,0 +1,117 @@
+caption: {{$:/plugins/nico/projectify/images/grid}} {{$:/language/projectify/Eisenhower}}
+created: 20240214000000000
+modified: 20240214000000000
+tags: $:/plugins/nico/projectify/tags/dashboard
+title: $:/plugins/nico/projectify/ui/dashboard/Eisenhower
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+\define quadrant-drop-actions()
+  <$list filter="[<actionTiddler>tag[todo]!has[draft.of]]" variable="ignore">
+    <$action-listops $tiddler=<<actionTiddler>> $field="tags" $subfilter="-Inbox"/>
+    <$action-setfield $tiddler=<<actionTiddler>> quadrant=<<quadrant>>/>
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+  </$list>
+\end
+
+\define quadrant-cell(qid titleKey)
+  <$vars quadrant=<<__qid__>>>
+    <div class={{{ [[py-quadrant py-quadrant-]addsuffix<__qid__>] }}}>
+      <div class="py-quadrant-header">
+        <h3>{{$:/language/projectify/$titleKey$}}</h3>
+        <span class="py-count info">
+          <$count filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>]"/>
+        </span>
+      </div>
+      <div class="py-quadrant-description">{{$:/language/projectify/$titleKey$/Description}}</div>
+      <$droppable tag="div" class="py-quadrant-drop" actions=<<quadrant-drop-actions>>>
+        <div class="py-todos">
+          <$list
+            filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>!nsort[priority]]"
+            template="$:/plugins/nico/projectify/ui/dashboard/QuadrantTodoItem"
+          />
+        </div>
+        <$list filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>count[]match[0]]" variable="ignore">
+          <div class="py-quadrant-empty">{{$:/language/projectify/Eisenhower/Empty}}</div>
+        </$list>
+      </$droppable>
+    </div>
+  </$vars>
+\end
+
+\define inbox-count()
+  <$vars currentTiddler="Inbox">
+    <span class="py-count">
+      <$count filter=<<py-open-todos>>/>
+    </span>
+  </$vars>
+\end
+
+\define quadrant-drop-actions()
+  <$list filter="[<actionTiddler>tag[todo]!has[draft.of]]" variable="ignore">
+    <$action-listops $tiddler=<<actionTiddler>> $field="tags" $subfilter="-Inbox"/>
+    <$action-setfield $tiddler=<<actionTiddler>> quadrant=<<quadrant>>/>
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+  </$list>
+\end
+
+\define quadrant-cell(qid titleKey)
+  <$vars quadrant=<<__qid__>>>
+    <div class={{{ [[py-quadrant py-quadrant-]addsuffix<__qid__>] }}}>
+      <div class="py-quadrant-header">
+        <h3>{{$:/language/projectify/$titleKey$}}</h3>
+        <span class="py-count">
+          <$count filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>]"/>
+        </span>
+      </div>
+      <div class="py-quadrant-description">{{$:/language/projectify/$titleKey$/Description}}</div>
+      <$droppable tag="div" class="py-quadrant-drop" actions=<<quadrant-drop-actions>>>
+        <div class="py-todos">
+          <$list
+            filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>!nsort[priority]]"
+            template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+          />
+        </div>
+        <$list filter="[all[tiddlers]tag[todo]!has[draft.of]!tag[done]quadrant<__qid__>count[]match[0]]" variable="ignore">
+          <div class="py-quadrant-empty">{{$:/language/projectify/Eisenhower/Empty}}</div>
+        </$list>
+      </$droppable>
+    </div>
+  </$vars>
+\end
+
+<$vars showProjectLinks="yes">
+  <label class="py-label">
+    {{$:/language/projectify/Eisenhower/Hint}}
+  </label>
+
+  <div class="py-quadrant-layout">
+    <div class="py-quadrant-inbox">
+      <h3>{{$:/language/projectify/Inbox}} <<inbox-count>></h3>
+      <$vars currentTiddler="Inbox">
+        <$list filter=<<py-has-no-open-todo>> variable="ignore">
+          <div class="py-quadrant-empty">{{$:/language/projectify/Eisenhower/Empty}}</div>
+        </$list>
+        <div class="py-todos">
+          <$list
+            filter=<<py-open-todos>>
+            template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+          />
+        </div>
+      </$vars>
+    </div>
+
+    <div class="py-quadrant-matrix">
+      <div class="py-quadrant-axis"></div>
+      <div class="py-quadrant-axis py-quadrant-axis-column">{{$:/language/projectify/Eisenhower/Urgent}}</div>
+      <div class="py-quadrant-axis py-quadrant-axis-column">{{$:/language/projectify/Eisenhower/NotUrgent}}</div>
+      <div class="py-quadrant-axis py-quadrant-axis-row">{{$:/language/projectify/Eisenhower/Important}}</div>
+      <<quadrant-cell do Eisenhower/DoFirst>>
+      <<quadrant-cell schedule Eisenhower/Schedule>>
+      <div class="py-quadrant-axis py-quadrant-axis-row">{{$:/language/projectify/Eisenhower/NotImportant}}</div>
+      <<quadrant-cell delegate Eisenhower/Delegate>>
+      <<quadrant-cell eliminate Eisenhower/Eliminate>>
+    </div>
+  </div>
+</$vars>

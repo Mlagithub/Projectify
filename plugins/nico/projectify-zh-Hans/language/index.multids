@@ -76,36 +76,52 @@ ViewProjectsAs: 更改项目查看形式
 Yesterday: 昨天
 cards: 卡片
 list: 列表
-RepeatEvery: FIXLANG Repeat every
-days: FIXLANG days
-weeks: FIXLANG weeks
-months: FIXLANG months
-years: FIXLANG years
-until: FIXLANG until
-forever: FIXLANG forever
-RecurringTask: FIXLANG Recurring task
-markedUndone: FIXLANG marked as undone
-dueDate: FIXLANG due date:
-QuestionDeleteNextTask: FIXLANG Do you want to delete any undone occurrence of this task automatically generated previously?
-due: FIXLANG due
-KeepOtherUndoneTasks: FIXLANG Keep other undone tasks
-DeleteOtherUndoneTasks: FIXLANG Delete other undone tasks
-NextDueDateBasedOn: FIXLANG Next due date calculated based on:
-CurrentDueDate: FIXLANG current due date
-InitialDueDate: FIXLANG initial due date
-CurrentDate: FIXLANG current date
-DoneOn: FIXLANG Done ...
-RenameTodo: FIXLANG Rename ...
-ConfirmNextRecurringDate: FIXLANG Please confirm the next due date:    
-ConfirmationRequired: FIXLANG Confirmation required
-ConfirmNextRecurringDateOption: FIXLANG Confirmation required for next due date
-ExceptOnDueDate: FIXLANG Yes, except on due date
-yes: FIXLANG Yes
-no: FIXLANG No
-SelectDashboardTabs: FIXLANG Select active tabs
-OrderDashboardTabs: FIXLANG Choose the order of the tabs (drag and drop)
-From: FIXLANG From
-To: FIXLANG to
-Search: FIXLANG Search
-Past: FIXLANG Past
-ShowAll: FIXLANG Show all
+RepeatEvery: 重复间隔
+days: 天
+weeks: 周
+months: 月
+years: 年
+until: 截止至
+forever: 永久
+RecurringTask: 循环任务
+markedUndone: 标记为未完成
+dueDate: 截止日期：
+QuestionDeleteNextTask: 是否要自动删除此前生成的尚未完成的该任务后续重复项？
+due: 截止于
+KeepOtherUndoneTasks: 保留其他未完成任务
+DeleteOtherUndoneTasks: 删除其他未完成任务
+NextDueDateBasedOn: 下次截止日期计算依据：
+CurrentDueDate: 当前截止日期
+InitialDueDate: 初始截止日期
+CurrentDate: 当前日期
+DoneOn: 完成于 ...
+RenameTodo: 重命名 ...
+ConfirmNextRecurringDate: 请确认下次截止日期：    
+ConfirmationRequired: 需要确认
+ConfirmNextRecurringDateOption: 循环任务下次截止日期需要确认
+ExceptOnDueDate: 是，按期完成时除外
+yes: 是
+no: 否
+SelectDashboardTabs: 选择启用的标签页
+OrderDashboardTabs: 调整标签页顺序（拖拽排序）
+From: 从
+To: 至
+Search: 搜索
+Past: 过去
+ShowAll: 显示全部
+Eisenhower: 四象限
+Eisenhower/Hint: 将任务从收件箱拖入合适的象限，按紧急与重要程度分类。
+Eisenhower/Urgent: 紧急
+Eisenhower/NotUrgent: 不紧急
+Eisenhower/Important: 重要
+Eisenhower/NotImportant: 不重要
+Eisenhower/DoFirst: 立即执行
+Eisenhower/DoFirst/Description: 重要且紧急 — 立即去做
+Eisenhower/Schedule: 制定计划
+Eisenhower/Schedule/Description: 重要不紧急 — 安排时间做
+Eisenhower/Delegate: 委托他人
+Eisenhower/Delegate/Description: 紧急不重要 — 交给别人
+Eisenhower/Eliminate: 尽量不做
+Eisenhower/Eliminate/Description: 不重要不紧急 — 考虑放弃
+Eisenhower/Empty: 暂无任务
+Eisenhower/BackToInbox: 移回收件箱

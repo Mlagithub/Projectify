@@ -113,3 +113,19 @@ Search: Search
 Past: Past
 ShowAll: Show all
 MaxListSizeOrAll: Max list size (or "all")
+Eisenhower: Eisenhower
+Eisenhower/Hint: Drag tasks from the Inbox into the quadrant that fits best: urgent vs. not urgent, important vs. not important.
+Eisenhower/Urgent: Urgent
+Eisenhower/NotUrgent: Not urgent
+Eisenhower/Important: Important
+Eisenhower/NotImportant: Not important
+Eisenhower/DoFirst: Do first
+Eisenhower/DoFirst/Description: Important & urgent — do it now
+Eisenhower/Schedule: Schedule
+Eisenhower/Schedule/Description: Important, not urgent — plan it
+Eisenhower/Delegate: Delegate
+Eisenhower/Delegate/Description: Urgent, not important — hand it off
+Eisenhower/Eliminate: Eliminate
+Eisenhower/Eliminate/Description: Not important, not urgent — drop it
+Eisenhower/Empty: No tasks
+Eisenhower/BackToInbox: Move back to the Inbox

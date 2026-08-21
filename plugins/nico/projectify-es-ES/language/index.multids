@@ -111,3 +111,19 @@ To: FIXLANG to
 Search: FIXLANG Search
 Past: FIXLANG Past
 ShowAll: FIXLANG Show all
+Eisenhower: Eisenhower
+Eisenhower/Hint: Arrastra tareas de la bandeja de entrada al cuadrante que mejor encaje: urgente vs. no urgente, importante vs. no importante.
+Eisenhower/Urgent: Urgente
+Eisenhower/NotUrgent: No urgente
+Eisenhower/Important: Importante
+Eisenhower/NotImportant: No importante
+Eisenhower/DoFirst: Hacer primero
+Eisenhower/DoFirst/Description: Importante y urgente — hazlo ya
+Eisenhower/Schedule: Programar
+Eisenhower/Schedule/Description: Importante, no urgente — planifícalo
+Eisenhower/Delegate: Delegar
+Eisenhower/Delegate/Description: Urgente, no importante — delégalo
+Eisenhower/Eliminate: Eliminar
+Eisenhower/Eliminate/Description: Ni importante ni urgente — descártalo
+Eisenhower/Empty: Sin tareas
+Eisenhower/BackToInbox: Volver a la bandeja de entrada

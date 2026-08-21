@@ -1,0 +1,25 @@
+caption: Eisenhower matrix
+description: Classify your tasks by urgency & importance
+created: 20240214000000000
+modified: 20240214000000000
+tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/help-card
+title: $:/plugins/nico/projectify/doc/Eisenhower
+type: text/vnd.tiddlywiki
+
+The [[Eisenhower matrix|https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method]]
+(also known as the ''urgent-important matrix'') is a [[dashboard|$:/plugins/nico/projectify/doc/Dashboard]]
+tab that helps you decide what to work on first. It displays your tasks in
+four quadrants, based on how urgent and how important they are:
+
+* ''Do first'' - important & urgent
+* ''Schedule'' - important, but not urgent
+* ''Delegate'' - urgent, but not important
+* ''Eliminate'' - neither important nor urgent
+
+To classify a task, simply [[drag & drop|https://tiddlywiki.com/#Drag%20and%20Drop]]
+it from the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]] into the quadrant of
+your choice: the task leaves the Inbox and is stored in that quadrant. Tasks
+can be dragged from one quadrant to another at any time, and the button
+displayed next to a classified task moves it back to the Inbox.
+
+<<py-tip "The quadrant of a task is stored in its `quadrant` field, which can be used in filters (for example `[tag[todo]quadrant[do]]`).">>

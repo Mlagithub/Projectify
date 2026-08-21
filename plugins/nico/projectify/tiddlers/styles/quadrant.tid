@@ -1,0 +1,135 @@
+created: 20240214000000000
+modified: 20240214000000000
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/quadrant
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.py-quadrant-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.py-quadrant-inbox {
+  border: 1px solid <<colour tiddler-editor-border>>;
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: <<colour tiddler-info-background>>;
+}
+
+.py-quadrant-inbox h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+
+.py-quadrant-inbox .py-todos {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.py-quadrant-matrix {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.py-quadrant-axis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: <<colour muted-foreground>>;
+}
+
+.py-quadrant-axis-row {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 4px 0;
+}
+
+.py-quadrant {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  border: 1px solid <<colour tiddler-editor-border>>;
+  border-radius: 6px;
+  overflow: hidden;
+  background: <<colour background>>;
+}
+
+.py-quadrant-do {
+  border-top: 4px solid #e73939;
+}
+
+.py-quadrant-schedule {
+  border-top: 4px solid #2da562;
+}
+
+.py-quadrant-delegate {
+  border-top: 4px solid #e77a39;
+}
+
+.py-quadrant-eliminate {
+  border-top: 4px solid <<colour muted-foreground>>;
+}
+
+.py-quadrant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px 4px 12px;
+}
+
+.py-quadrant-header h3 {
+  margin: 0;
+  font-size: 1.05em;
+}
+
+.py-quadrant-header .py-count {
+  font-size: 11px;
+  padding: 4px;
+  min-width: 20px;
+}
+
+.py-quadrant-description {
+  font-size: .8em;
+  opacity: .65;
+  padding: 0 12px 8px 12px;
+}
+
+.py-quadrant-drop {
+  flex: 1;
+  padding: 2px 8px 10px 8px;
+  min-height: 100px;
+}
+
+.py-quadrant-drop.tc-dragover {
+  background: rgba(255, 255, 100, 0.3);
+  outline: 2px dashed rgba(0, 0, 0, 0.25);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.py-quadrant-empty {
+  font-size: .85em;
+  font-style: italic;
+  opacity: .6;
+  padding: 6px 4px;
+}
+
+.py-quadrant .py-todo {
+  padding: 4px 0;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-quadrant-matrix {
+    grid-template-columns: 1fr 1fr;
+  }
+}
