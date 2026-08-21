@@ -112,7 +112,7 @@ Search: FIXLANG Search
 Past: FIXLANG Past
 ShowAll: FIXLANG Show all
 Eisenhower: Eisenhower
-Eisenhower/Hint: Ziehe Aufgaben aus der Inbox in den passenden Quadranten: dringend vs. nicht dringend, wichtig vs. nicht wichtig.
+Eisenhower/Hint: Jede Aufgabe gehört zu einem der vier Quadranten. Ändere es jederzeit mit dem Quadranten-Button oder ziehe Aufgaben per Drag & Drop zwischen den Quadranten.
 Eisenhower/Urgent: Dringend
 Eisenhower/NotUrgent: Nicht dringend
 Eisenhower/Important: Wichtig
@@ -126,4 +126,8 @@ Eisenhower/Delegate/Description: Dringend, nicht wichtig — delegieren
 Eisenhower/Eliminate: Eliminieren
 Eisenhower/Eliminate/Description: Weder wichtig noch dringend — streichen
 Eisenhower/Empty: Keine Aufgaben
-Eisenhower/BackToInbox: Zurück zur Inbox
+Quadrant/Hint: Quadrant
+Quadrant/do: Zuerst erledigen
+Quadrant/schedule: Planen
+Quadrant/delegate: Delegieren
+Quadrant/eliminate: Eliminieren

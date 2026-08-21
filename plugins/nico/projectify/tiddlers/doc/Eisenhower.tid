@@ -8,18 +8,23 @@ type: text/vnd.tiddlywiki
 
 The [[Eisenhower matrix|https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method]]
 (also known as the ''urgent-important matrix'') is a [[dashboard|$:/plugins/nico/projectify/doc/Dashboard]]
-tab that helps you decide what to work on first. It displays your tasks in
-four quadrants, based on how urgent and how important they are:
+tab that helps you decide what to work on first. It acts as a kanban board
+displaying all your open tasks in four quadrants, based on how urgent and how
+important they are:
 
 * ''Do first'' - important & urgent
 * ''Schedule'' - important, but not urgent
 * ''Delegate'' - urgent, but not important
 * ''Eliminate'' - neither important nor urgent
 
-To classify a task, simply [[drag & drop|https://tiddlywiki.com/#Drag%20and%20Drop]]
-it from the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]] into the quadrant of
-your choice: the task leaves the Inbox and is stored in that quadrant. Tasks
-can be dragged from one quadrant to another at any time, and the button
-displayed next to a classified task moves it back to the Inbox.
+Every todo is classified into one of the four quadrants, just like its priority:
+the quadrant is a property of the todo that you can change at any time. Todos
+created without an explicit quadrant default to ''Eliminate'' (neither important
+nor urgent).
 
-<<py-tip "The quadrant of a task is stored in its `quadrant` field, which can be used in filters (for example `[tag[todo]quadrant[do]]`).">>
+You can change the quadrant of a todo with the quadrant button displayed next to
+it, or simply [[drag & drop|https://tiddlywiki.com/#Drag%20and%20Drop]] it from
+one quadrant to another in the board. The board updates dynamically, so a todo
+immediately moves to the quadrant matching its current state.
+
+<<py-tip "The quadrant of a task is stored in its `quadrant` field (`do`, `schedule`, `delegate` or `eliminate`), which can be used in filters (for example `[tag[todo]quadrant[do]]`).">>

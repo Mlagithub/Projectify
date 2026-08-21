@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 
 !! Features
 
-* New ''Eisenhower matrix'' tab in the dashboard: drag & drop tasks from the Inbox into one of four quadrants based on urgency and importance
+* The ''Eisenhower matrix'' tab is now a kanban board: every todo has a quadrant property (''do first'', ''schedule'', ''delegate'' or ''eliminate'', defaulting to not important & not urgent) that can be changed at any time, and the board shows all open todos grouped by their current quadrant
 
 ! Release 0.17.2
 

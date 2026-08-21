@@ -110,7 +110,7 @@ Search: 搜索
 Past: 过去
 ShowAll: 显示全部
 Eisenhower: 四象限
-Eisenhower/Hint: 将任务从收件箱拖入合适的象限，按紧急与重要程度分类。
+Eisenhower/Hint: 每个待办事项都属于四个象限之一。可随时通过象限按钮更改，或将待办事项拖拽到其他象限。
 Eisenhower/Urgent: 紧急
 Eisenhower/NotUrgent: 不紧急
 Eisenhower/Important: 重要
@@ -124,4 +124,8 @@ Eisenhower/Delegate/Description: 紧急不重要 — 交给别人
 Eisenhower/Eliminate: 尽量不做
 Eisenhower/Eliminate/Description: 不重要不紧急 — 考虑放弃
 Eisenhower/Empty: 暂无任务
-Eisenhower/BackToInbox: 移回收件箱
+Quadrant/Hint: 四象限
+Quadrant/do: 立即执行
+Quadrant/schedule: 制定计划
+Quadrant/delegate: 委托他人
+Quadrant/eliminate: 尽量不做

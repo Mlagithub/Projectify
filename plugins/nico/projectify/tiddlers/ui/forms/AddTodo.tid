@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due={{{ [<stateTiddler>get[due]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due.initial={{{ [<stateTiddler>get[due]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
+  <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} quadrant={{{ [<stateTiddler>get[quadrant]else[eliminate]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} recurring.unit={{{ [<stateTiddler>get[recurring.unit]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} recurring.n={{{ [<stateTiddler>get[recurring.n]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} recurring.until={{{ [<stateTiddler>get[recurring.until]] }}}/>
@@ -32,6 +33,7 @@ type: text/vnd.tiddlywiki
   <$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="quadrant"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="recurring.unit"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="recurring.n"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="recurring.until"/>
@@ -58,6 +60,7 @@ type: text/vnd.tiddlywiki
       <$tiddler tiddler=<<stateTiddler>>>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoDueDate" mode="inline"/>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoPriority" mode="inline"/>
+	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoQuadrant" mode="inline"/>
 	<$list filter="[all[current]has[due]]">
           <$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoRecurring" mode="inline"/>
 	</$list>

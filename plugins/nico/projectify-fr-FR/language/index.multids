@@ -112,7 +112,7 @@ Search: Recherche
 Past: FIXLANG Passé
 ShowAll: Afficher tout
 Eisenhower: Eisenhower
-Eisenhower/Hint: Glissez les tâches de la boîte de réception dans le quadrant approprié : urgent vs. pas urgent, important vs. pas important.
+Eisenhower/Hint: Chaque tâche est classée dans l'un des quatre quadrants. Modifiez-le à tout moment avec le bouton quadrant, ou par glisser-déposer entre les quadrants.
 Eisenhower/Urgent: Urgent
 Eisenhower/NotUrgent: Pas urgent
 Eisenhower/Important: Important
@@ -126,5 +126,9 @@ Eisenhower/Delegate/Description: Urgent, pas important — à déléguer
 Eisenhower/Eliminate: Éliminer
 Eisenhower/Eliminate/Description: Ni important ni urgent — à abandonner
 Eisenhower/Empty: Aucune tâche
-Eisenhower/BackToInbox: Retour à la boîte de réception
+Quadrant/Hint: Quadrant
+Quadrant/do: À faire d'abord
+Quadrant/schedule: Planifier
+Quadrant/delegate: Déléguer
+Quadrant/eliminate: Éliminer
 

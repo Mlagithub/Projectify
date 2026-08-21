@@ -1,0 +1,18 @@
+created: 20240214000000000
+modified: 20240214000000000
+tags:
+title: $:/plugins/nico/projectify/ui/forms/TodoQuadrant
+type: text/vnd.tiddlywiki
+
+<div class="py-quadrants">
+  <$list filter="do schedule delegate eliminate" variable="quadrant">
+    <$set name="quadrantLingo" filter="[[$:/language/projectify/Quadrant/]addsuffix<quadrant>]">
+      <$button class={{{ [[tc-btn-invisible py-quadrant-]addsuffix<quadrant>] }}}>
+        {{$:/plugins/nico/projectify/images/grid}}
+        <$transclude tiddler=<<quadrantLingo>>/>
+        <$action-setfield quadrant=<<quadrant>>/>
+        <$action-sendmessage $message="tm-auto-save-wiki"/>
+      </$button>
+    </$set>
+  </$list>
+</div>

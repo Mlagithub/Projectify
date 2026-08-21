@@ -1,0 +1,27 @@
+created: 20240214000000000
+modified: 20240214000000000
+tags:
+title: $:/plugins/nico/projectify/ui/buttons/TodoQuadrant
+type: text/vnd.tiddlywiki
+
+<$set name="currentQuadrant" filter="[all[current]get[quadrant]else[eliminate]]">
+  <$vars
+    popupTiddler=<<qualify "$:/state/projectify/todo-quadrant-dropdown">>
+    cssClass={{{ [[py-btn py-quadrant-btn py-quadrant-]addsuffix<currentQuadrant>] }}}
+  >
+    <$button
+      class=<<cssClass>>
+      popup=<<popupTiddler>>
+      tooltip={{$:/language/projectify/Quadrant/Hint}}
+      aria-label={{$:/language/projectify/Quadrant/Hint}}
+    >
+      {{$:/plugins/nico/projectify/images/grid}}
+    </$button>
+
+    <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+      <div class="tc-drop-down py-drop-down">
+        {{||$:/plugins/nico/projectify/ui/forms/TodoQuadrant}}
+      </div>
+    </$reveal>
+  </$vars>
+</$set>

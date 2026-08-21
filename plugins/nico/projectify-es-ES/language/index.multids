@@ -112,7 +112,7 @@ Search: FIXLANG Search
 Past: FIXLANG Past
 ShowAll: FIXLANG Show all
 Eisenhower: Eisenhower
-Eisenhower/Hint: Arrastra tareas de la bandeja de entrada al cuadrante que mejor encaje: urgente vs. no urgente, importante vs. no importante.
+Eisenhower/Hint: Cada tarea pertenece a uno de los cuatro cuadrantes. Cámbialo en cualquier momento con el botón de cuadrante, o arrastra las tareas entre cuadrantes.
 Eisenhower/Urgent: Urgente
 Eisenhower/NotUrgent: No urgente
 Eisenhower/Important: Importante
@@ -126,4 +126,8 @@ Eisenhower/Delegate/Description: Urgente, no importante — delégalo
 Eisenhower/Eliminate: Eliminar
 Eisenhower/Eliminate/Description: Ni importante ni urgente — descártalo
 Eisenhower/Empty: Sin tareas
-Eisenhower/BackToInbox: Volver a la bandeja de entrada
+Quadrant/Hint: Cuadrante
+Quadrant/do: Hacer primero
+Quadrant/schedule: Programar
+Quadrant/delegate: Delegar
+Quadrant/eliminate: Eliminar

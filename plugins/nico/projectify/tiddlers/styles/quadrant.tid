@@ -12,23 +12,6 @@ type: text/vnd.tiddlywiki
   gap: 16px;
 }
 
-.py-quadrant-inbox {
-  border: 1px solid <<colour tiddler-editor-border>>;
-  border-radius: 6px;
-  padding: 10px 14px;
-  background: <<colour tiddler-info-background>>;
-}
-
-.py-quadrant-inbox h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.1em;
-}
-
-.py-quadrant-inbox .py-todos {
-  max-height: 50vh;
-  overflow-y: auto;
-}
-
 .py-quadrant-matrix {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
@@ -110,6 +93,11 @@ type: text/vnd.tiddlywiki
   min-height: 100px;
 }
 
+.py-quadrant-drop .py-todos {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
 .py-quadrant-drop.tc-dragover {
   background: rgba(255, 255, 100, 0.3);
   outline: 2px dashed rgba(0, 0, 0, 0.25);
@@ -126,6 +114,66 @@ type: text/vnd.tiddlywiki
 
 .py-quadrant .py-todo {
   padding: 4px 0;
+}
+
+/* Quadrant picker button */
+.py-quadrant-btn {
+  border: none;
+}
+
+.py-quadrant-do, .py-quadrant-do svg,
+.py-drop-down .py-quadrant-do,
+.py-drop-down .py-quadrant-do svg,
+.py-btn.py-quadrant-do, .py-btn.py-quadrant-do svg,
+.py-todo-actions .py-btn.py-quadrant-do,
+.py-todo-actions .py-btn.py-quadrant-do svg {
+  fill: #e73939;
+  color: #e73939;
+}
+
+.py-quadrant-schedule, .py-quadrant-schedule svg,
+.py-drop-down .py-quadrant-schedule,
+.py-drop-down .py-quadrant-schedule svg,
+.py-btn.py-quadrant-schedule, .py-btn.py-quadrant-schedule svg,
+.py-todo-actions .py-btn.py-quadrant-schedule,
+.py-todo-actions .py-btn.py-quadrant-schedule svg {
+  fill: #2da562;
+  color: #2da562;
+}
+
+.py-quadrant-delegate, .py-quadrant-delegate svg,
+.py-drop-down .py-quadrant-delegate,
+.py-drop-down .py-quadrant-delegate svg,
+.py-btn.py-quadrant-delegate, .py-btn.py-quadrant-delegate svg,
+.py-todo-actions .py-btn.py-quadrant-delegate,
+.py-todo-actions .py-btn.py-quadrant-delegate svg {
+  fill: #e77a39;
+  color: #e77a39;
+}
+
+.py-quadrant-eliminate, .py-quadrant-eliminate svg,
+.py-drop-down .py-quadrant-eliminate,
+.py-drop-down .py-quadrant-eliminate svg,
+.py-btn.py-quadrant-eliminate, .py-btn.py-quadrant-eliminate svg,
+.py-todo-actions .py-btn.py-quadrant-eliminate,
+.py-todo-actions .py-btn.py-quadrant-eliminate svg {
+  fill: <<colour muted-foreground>>;
+  color: <<colour muted-foreground>>;
+}
+
+/* Quadrant picker dropdown */
+.tc-drop-down .py-quadrants {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.tc-drop-down .py-quadrants .tc-btn-invisible {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
