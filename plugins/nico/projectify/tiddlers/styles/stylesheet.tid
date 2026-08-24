@@ -94,6 +94,30 @@ type: text/vnd.tiddlywiki
   white-space: nowrap;
 }
 
+/* Collapsible list of open todos shown under each project in the cards and
+   lists views */
+.py-project-tasks {
+  margin: 2px 0 6px;
+}
+
+.py-project-tasks-toggle {
+  font-size: .8em;
+  padding: 1px 4px;
+  color: <<colour muted-foreground>>;
+}
+
+.py-project-tasks-chevron svg {
+  vertical-align: -0.15em;
+}
+
+.py-project-tasks-count {
+  font-weight: bold;
+}
+
+.py-project-tasks-list {
+  margin-top: 2px;
+}
+
 /* Align the completed todos with the non-completed ones that have a drag
    handle. TODO: Check why the padding is different from the drag-handle's width
    */
@@ -248,6 +272,13 @@ type: text/vnd.tiddlywiki
   padding: 0;
   border: 0;
   border-bottom: 1px solid <<colour muted-foreground>>;
+}
+
+/* Keep the "move to project" entry icon at the same relative size as the
+   other icons in the todo actions dropdown */
+.tc-btn-invisible.py-btn-move-project svg {
+  height: 1em;
+  width: 1em;
 }
 
 .tc-drop-down .py-priorities {

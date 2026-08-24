@@ -23,5 +23,6 @@ type: text/vnd.tiddlywiki
     <div class="py-project-infos">
       <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
     </div>
+	{{||$:/plugins/nico/projectify/ui/dashboard/ProjectTasks}}
   </li>
 </$vars>

@@ -162,6 +162,14 @@ tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 todo [all[current]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<__tag__>]
 \end
 
+\define move-todo-to-project-tags()
+todo [[$(sourceTiddler)$]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [[$(currentTiddler)$]]
+\end
+
+\define move-todo-to-inbox-tags()
+todo [[$(sourceTiddler)$]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [Inbox]
+\end
+
 \define project-refile-tags()
 todo [all[<actionTiddler>]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<currentTiddler>]
 \end

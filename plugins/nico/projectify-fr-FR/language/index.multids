@@ -131,4 +131,8 @@ Quadrant/do: À faire d'abord
 Quadrant/schedule: Planifier
 Quadrant/delegate: Déléguer
 Quadrant/eliminate: Éliminer
+MoveToProject/Caption: Déplacer vers un projet…
+MoveToProject/NoOtherProjects: Aucun autre projet
+ShowTasks/Hint: Afficher les tâches
+HideTasks/Hint: Masquer les tâches
 

@@ -10,6 +10,8 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * The ''Eisenhower matrix'' tab is now a kanban board: every todo has a quadrant property (''do first'', ''schedule'', ''delegate'' or ''eliminate'', defaulting to not important & not urgent) that can be changed at any time, and the board shows all open todos grouped by their current quadrant
+* Projects in the dashboard (cards and list views) can now expand a collapsible list of their open tasks
+* New "Move to project" action in the todo actions dropdown to change the project a task belongs to
 
 ! Release 0.17.2
 

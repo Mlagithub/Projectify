@@ -127,3 +127,7 @@ Quadrant/do: Eerst doen
 Quadrant/schedule: Inplannen
 Quadrant/delegate: Delegeren
 Quadrant/eliminate: Elimineren
+MoveToProject/Caption: Verplaats naar project…
+MoveToProject/NoOtherProjects: Geen andere projecten
+ShowTasks/Hint: Taken weergeven
+HideTasks/Hint: Taken verbergen

@@ -1,0 +1,34 @@
+created: 20250215000000000
+modified: 20250216000000000
+title: $:/plugins/nico/projectify/ui/forms/TodoMoveToProject
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$let sourceTiddler=<<currentTiddler>>>
+<$vars movePopup=<<qualify "$:/state/projectify/move-todo-popup">>>
+  <$button class="tc-btn-invisible py-btn-move-project" popup=<<movePopup>>>
+    {{||$:/plugins/nico/projectify/images/collection}} <<lingo MoveToProject/Caption>>
+  </$button>
+  <$reveal state=<<movePopup>> type="popup" animate="yes">
+    <div class="tc-drop-down py-drop-down py-move-todo-drop-down">
+      <$button class="tc-btn-invisible">
+        {{||$:/plugins/nico/projectify/images/inbox}} {{$:/language/projectify/Inbox}}
+        <$action-listops $tiddler=<<sourceTiddler>> $tags=<<move-todo-to-inbox-tags>>/>
+        <$action-deletetiddler $tiddler=<<movePopup>>/>
+        <$action-setfield $tiddler=<<popupTiddler>> text=""/>
+        <$action-sendmessage $message="tm-auto-save-wiki"/>
+      </$button>
+      <$list filter="[all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]!tag[done]] -[<sourceTiddler>tags[]]" emptyMessage={{$:/language/projectify/MoveToProject/NoOtherProjects}}>
+        <$button class="tc-btn-invisible">
+          {{||$:/plugins/nico/projectify/images/collection}} <$text text=<<currentTiddler>>/>
+          <$action-listops $tiddler=<<sourceTiddler>> $tags=<<move-todo-to-project-tags>>/>
+          <$action-deletetiddler $tiddler=<<movePopup>>/>
+          <$action-setfield $tiddler=<<popupTiddler>> text=""/>
+          <$action-sendmessage $message="tm-auto-save-wiki"/>
+        </$button>
+      </$list>
+    </div>
+  </$reveal>
+</$vars>
+</$let>

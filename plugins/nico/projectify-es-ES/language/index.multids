@@ -131,3 +131,7 @@ Quadrant/do: Hacer primero
 Quadrant/schedule: Programar
 Quadrant/delegate: Delegar
 Quadrant/eliminate: Eliminar
+MoveToProject/Caption: Mover a proyecto…
+MoveToProject/NoOtherProjects: No hay otros proyectos
+ShowTasks/Hint: Mostrar tareas
+HideTasks/Hint: Ocultar tareas

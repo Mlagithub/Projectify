@@ -29,6 +29,8 @@ type: text/vnd.tiddlywiki
 
       {{||$:/plugins/nico/projectify/ui/buttons/TodoRename}}
 
+      {{||$:/plugins/nico/projectify/ui/forms/TodoMoveToProject}}
+
       {{||$:/plugins/nico/projectify/ui/forms/TodoConvert}}
 
     </div>

@@ -129,3 +129,7 @@ Quadrant/do: 立即执行
 Quadrant/schedule: 制定计划
 Quadrant/delegate: 委托他人
 Quadrant/eliminate: 尽量不做
+MoveToProject/Caption: 移动到项目…
+MoveToProject/NoOtherProjects: 没有其他项目
+ShowTasks/Hint: 显示任务
+HideTasks/Hint: 收起任务

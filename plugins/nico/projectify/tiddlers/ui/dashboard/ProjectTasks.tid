@@ -1,0 +1,48 @@
+created: 20250215000000000
+modified: 20250215000000000
+title: $:/plugins/nico/projectify/ui/dashboard/ProjectTasks
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$let tasks-state={{{ [[$:/state/projectify/show-project-tasks]addsuffix[/]addsuffix<currentTiddler>] }}}>
+  <$list filter=<<py-has-open-todos>> variable="ignore">
+
+    <div class="py-project-tasks">
+      <$reveal type="nomatch" state=<<tasks-state>> text="yes">
+        <$button
+          class="tc-btn-invisible py-project-tasks-toggle"
+          set=<<tasks-state>>
+          setTo="yes"
+          tooltip={{$:/language/projectify/ShowTasks/Hint}}
+          aria-label={{$:/language/projectify/ShowTasks/Hint}}
+        >
+          <span class="py-project-tasks-chevron">{{$:/core/images/right-arrow}}</span>
+          <span class="py-project-tasks-count"><$count filter=<<py-open-todos>>/></span>
+        </$button>
+      </$reveal>
+
+      <$reveal type="match" state=<<tasks-state>> text="yes">
+        <div class="py-project-tasks-header">
+          <$button
+            class="tc-btn-invisible py-project-tasks-toggle"
+            set=<<tasks-state>>
+            setTo="no"
+            tooltip={{$:/language/projectify/HideTasks/Hint}}
+            aria-label={{$:/language/projectify/HideTasks/Hint}}
+          >
+            <span class="py-project-tasks-chevron">{{$:/core/images/down-arrow}}</span>
+            <span class="py-project-tasks-count"><$count filter=<<py-open-todos>>/></span>
+          </$button>
+        </div>
+
+        <div class="py-todos py-project-tasks-list">
+          <$vars dragHandle="yes">
+            <$list filter=<<py-open-todos>> template="$:/plugins/nico/projectify/ui/todo/TodoItem"/>
+          </$vars>
+        </div>
+      </$reveal>
+    </div>
+
+  </$list>
+</$let>
